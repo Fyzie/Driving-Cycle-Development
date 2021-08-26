@@ -2,10 +2,10 @@
 clc;
 clear all;
 close all;
-route = {'Route A','Route B','Route C','Route D','Route E'};
-routepic = {'Route A.png','Route B.png','Route C.png','Route D.png','Route E.png'};
-file = {'Sheet1','Sheet2','Sheet3','Sheet4','Sheet5'};
-part = {'P21:Q28','P21:Q26','P21:Q34','P21:Q31','P21:Q32'};
+route = {'Route A'};
+routepic = {'Route A.png'};
+file = {'Sheet1'};
+part = {'P21:Q28'};
 for f=1:(length(file))
 %% Upload Data
 data = xlsread('SpeedData.xlsx',file{f},part{f});
