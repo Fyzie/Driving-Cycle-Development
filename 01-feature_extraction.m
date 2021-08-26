@@ -2,9 +2,9 @@
 clc;
 clear all;
 close all;
-route = {'Route A','Route B','Route C','Route D','Route E'};
-file = {'Sheet1','Sheet2','Sheet3','Sheet4','Sheet5'};
-part = {'F1:F381','F1:F436','F1:F413','F1:F404','F1:F321'};
+route = {'Route A'};
+file = {'Sheet1'};
+part = {'F1:F381'};
 for a=1:(length(file))
     spd = xlsread('SpeedData.xlsx',file{a},part{a});
     len = length(spd);
